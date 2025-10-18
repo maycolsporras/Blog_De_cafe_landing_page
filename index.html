@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Blog</title>
+    <meta name="description" content="Página web de blog de café">
 
     <!--Prefetch-->
     <!--Para precargar la siguiente pagina que queremos que el usuario vea y sea mas rapido-->
@@ -84,7 +85,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="./img/blog3.jpg" alt="imagen blog">
+                    <picture> <!--Para cargar img webp que pesan menos y de segundo un img por si el navegador no procesa el webp-->
+                        <source loading="lazy" srcset="./img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="" alt="imagen blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
